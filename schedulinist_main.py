@@ -310,7 +310,7 @@ class Schedulinist:
                 )
                 response_list.append(response)
                 for linist, weight in weights_dict.items():
-                    weight = weight * (2 ^ (response["s"][linist]))
+                    weight = weight * (2 ** (response["s"][linist]))
         # Parse response_list and return output_dict:
         # {'s': {'Asher': 4, 'Liran': 4, 'Yanay': 4, 'Amit': 3, 'Yoni': 1, 'Maria': 1},
         # 'Asher': {1: 1, 2: 1}, 'Liran': {3: 1, 4: 1}, 'Yanay': {5: 1}, 'Amit': {6: 1},
